@@ -1,0 +1,96 @@
+NORMATIZAÇÃO DE DADOS!
+Relacionamentos entre duas ou mais tabelas atraves de tabelas chaves.
+
+
+
+CHAVES PRIMARIAS - (PRIMARY KEY - PK) -> coluna com valores únicos.
+
+CHAVES COMPOSTAS - composição de duas ou mais colunas para criar uma combinação única!
+
+CHAVE ESTRANGEIRA - (FOREIGN KEY - FK) -coluna que armazena a chave primaria de outra tabela.
+
+---------------------------------------------------------------------------------------------------
+RELACIONAMENTOS!
+
+
+1:1 (um para um)
+	Um registro na primeira tabela tem OBRIGATÓRIAMENTE um registro na segunda tabela.
+
+1:*(um para muitos)
+	Um registro na primeira tabela pode ter mais de um registro na segunda tabela, mas 
+cada registro na segunda tabela OBRIGATÓRIAMENTE tem UM registro na primeira tabela.
+
+*:* (muitos para muitos)
+	Um registro na primeira tabela pode ter mais de um registro na segunda tabela e vice-versa.
+
+
+---------------------------------------------------------------------------------------------------
+BOAS PRÁTICAS NO USO DE CHAVES!
+	- Quanto menor, melhor.
+	- Transparente para o usuário (Id própria).
+
+---------------------------------------------------------------------------------------------------
+DIAGRAMA DE MODELO DE DADOS!
+
+PÉ DE GALINHA!
+1:1 ||-----||
+1:* ||-----|<
+*:* >|-----|<
+
+---------------------------------------------------------------------------------------------------
+Anomalias nos dados
+
+Anomalia de Inserção - impede a inclusão de registros devido a falta de dados.
+Anomalia de Exclusão - impede a exclusão de registros devido ao relacionamento com outra tabela.
+Anomalia de Alteração- impede a alteração de registros devido ao relacionamento com outra tabela.
+
+---------------------------------------------------------------------------------------------------
+NORMALIZAÇÃO DE DADOS
+
+Evitar anomalias.
+Facilita a manutenção.
+Maximizar performance.
+Manter integridade dos dados.
+Normalização de dados:
+	-1970.
+	-5 formas normais.
+	-feita por intuição.
+	-resulta em um número de tabelas do banco.
+	-pode aumentar a manutenção e dimunui a performance.
+
+BOM SENSO, please.
+
+---------------------------------------------------------------------------------------------------
+Primeira Forma Normal (1FN)
+	-Cada linha deve representar um ÚNICO registro.
+	-Cada célula deve conter um ÚNICO valor.
+
+
+---------------------------------------------------------------------------------------------------
+Segunda Forma Normal (2FN)
+	*A tabela deve estar na 1FN.
+	-Atributos não chave da tabela devem depender de alguma das chaves da tabela.
+
+
+---------------------------------------------------------------------------------------------------
+Terceira Forma Normal (3FN)
+	**O Banco deve estar na 2FN.
+	- Os atributos não chave de uma tabela DEVEM depender EXCLUSIVAMENTE da chave primaria da 
+tabela.
+
+---------------------------------------------------------------------------------------------------
+Quarta e Quinta Forma Normal (4FN e 5FN)
+	Separam em novas tabelas valores que ainda estejam redundantes em uma mesma coluna.
+
+
+
+
+
+
+
+
+
+
+
+
+
