@@ -1,0 +1,177 @@
+Jd3kdh938hf9qv$%GF@E$
+Criar e modelar bancos
+normalizar bancos
+interagir com bancos 
+Teoria SQL ANSI (prática MySQL, pode ter variações da linguagem SQL ANSI)
+
+
+correr atras
+	Integração (JAVA, PHP, PYTHON, RUBY)
+	PostgreSQL
+	Oracle
+	SQL Server
+	
+ANDRÉ MILANI
+---------------------------------------------------------------------------------
+Mecanismos de armazenamento de dados
+Estrutura regular
+Não relacipnais
+	-Arquivos estruturados
+Relacionais
+	-organizados em tabelas
+	-tabelas podem se relacionar
+	-menor espaço de armazenamento
+	-maior velocidade de acesso aos dados
+	-mundialmente utilizado
+---------------------------------------------------------------------------------
+Partes dos Bd relacionais 
+
+Banco de dados
+Tabelas (formada por linhas e colunas)
+Colunas (campos que formam um registro)
+Linhas (registros ou tuplas)
+
+Visões (Consultas a dados  das tabelas sem armazena-los)
+Índices (extruturas extras, definem prioridade, aumentam a velocidade)
+---------------------------------------------------------------------------------
+	SGBDs - SISTEMAS GERENCIADORES DE BANCO DE DADOS (DBMS)	
+Complementa o Banco
+Organiza o acesso ao banco.
+Controla acesso.
+Evita inconsistencias.
+Faz a comunicação entre banco de dados, usuarios e sistemas.
+---------------------------------------------------------------------------------
+	INTRODUÇÃO AO SQL
+- Structured Query Language
+	linguagem estruturada de consulta.
+
+Conjunto de linguas
+	DDL data definition language	*Definição
+	DML data Manipulation language	*Manipulação
+	DQL data query language		*Consulta	 		
+	DCL data control language	*Controle
+	DTL data transaction language	*Transação
+
+---------------------------------------------------------------------------------
+	DDL data definition language	*Definição
+CREATE cria uma estrutura
+ALTER altera uma estrutura
+DROP exclui uma estrutura
+
+---------------------------------------------------------------------------------
+	DML data Manipulation language	*Manipulação
+INSERT insere
+UPDATE atualiza
+DELETE deleta
+
+---------------------------------------------------------------------------------
+	DQL data query language		*Consulta
+SELECT seleciona, ordena, agrupa, funções aritmeticas.
+
+---------------------------------------------------------------------------------
+	DCL data control language	*Controle
+Define quem pode ou não atuar no banco de dados, permite e nega acesso.
+
+GRANT dá acesso a dados e operações.
+REVOKE revoga autoridade, retira poder de acesso.
+
+---------------------------------------------------------------------------------
+	DTL data transaction language	*Transação
+transação -> conjunto de comandos.
+
+START TRANSACTION inicia uma transação.
+COMMIT contretiza a transação
+ROLLBACK anula a transação.
+
+---------------------------------------------------------------------------------
+MySQL
+mais utilizado.
+
+PostGreSQL
+segundo + utilizado
+
+FireBird
+concorrente do psgsql
+
+----------- DBMS de grande porte!
+Oracle
+SQL Server
+
+**********************************************************************************
+Todos são SGBD (DBMS) e trabalham com aplicações de todos os portes.
+
+Todos realizam Transações ACID 
+
+----------------------------------------------------------------------------------
+Licença comercial - PostGreSQL e FireBird (gratis para empresa)
+----------------------------------------------------------------------------------
+Licença estudantil - TODOS TEM VERSÃO ESTUDANTIL!
+
+MS Acess - 
+Banco de dados de pequeno porte.
+Frágil (Segurança).
+
+
+----------------------------------------------------------------------------------
+Anotações da avaliação!
+
+Questão 1
+
+Marque as afirmativas verdadeiras referente a bancos de dados relacionais:
+	Os dados são armazenados em tabelas. 
+	É um padrão utilizado mundialmente.
+
+lembrar que:
+	Bancos de dados relacionais utiliza tabelas para armazenamento de informações, 
+e por ser relacional permite que tabelas possam se relacionar com outras tabelas. 
+Ocupa menos espaço em disco e tem maior velocidade de acesso. Por suas vantagens, 
+é um padrão utilizado mundialmente.
+
+Questão 2
+
+A linguagem DCL (Data Control Language) é responsável por:
+	Gerenciar o acesso aos dados.
+
+lembrar que:
+	A linguagem DCL (Data Control Language) é utilizada para controlar os acessos a um banco de dados.
+
+Questão 3
+
+A linguagem DQL (Data Query Language) é responsável por:
+	Consultar os dados.
+
+lembrar que:
+	A linguagem DQL (Data Query Language) é utilizada para consultar os dados de um banco de dados.	
+
+
+Questão 4
+
+A linguagem DML (Data Manipulation Language) é responsável por:
+	Manipular os dados. 
+
+lembrar que:
+	A linguagem DML (Data Manipulation Language) é utilizada para manipular os dados de um banco de dados.
+
+Questão 5
+
+O que são as linhas de uma tabela em um banco de dados relacional?
+	Registros. 
+
+lembrar que:
+	As linhas de uma tabela representam os registros que estão armazenados na tabela em questão.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
