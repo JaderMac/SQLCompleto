@@ -1,0 +1,116 @@
+CRIANDO UM BANCO DE DADOS!
+
+
+-------------------------------------------------------------
+Tipos de dados - 
+
+Tabela no Site da SoftBlue -
+ 
+	* String
+	* Data e hora
+	* Listas Customizadas
+
+Outros tipos
+	-BLOB -> permite informações binárias(árquivos e imagens).
+conversão deve ser feita pela linguagem de programação que faz interface com o Banco. 
+	-TEXT -> grandes informações de strings.	
+	-REDES-> endereços de IP, MAC-ADRESS.
+	-MONETÁRIOS -> valores monetários com formatação.
+	-GEOMÉTRICOS-> formas geométricas. 
+------------------------------------------------------------
+Atributos -
+
+NULL / Not NULL - 
+	Permite ou não valores nulos (chaves primárias não podem ser nulas!)
+
+Unsigned / Signed
+	Permite ou não números negativos.
+
+Auto-increment
+	Sequências e contadores.
+
+------------------------------------------------------------
+BOAS PRÁTICAS DE ARMAZENAMENTO EM DISCO -
+
+-Espaço em disco -> Quanto menor o tipo de dado, menor o espaço ocupado!
+-Processamento e busca -> Quanto menor o tipo de dado, mais rápido é o processamento!
+
+	MAUS USOS
+		-dados numéricos em strings.
+		-campos numéricos e strings maiores que o necessário.
+
+------------------------------------------------------------
+DDL ( DATA DEFINITION LANGUAGE )
+
+	CREATE	cria	ESTRUTURAS! 
+	ALTER	altera 	ESTRUTURAS!
+ 	DROP	exclui	ESTRUTURAS!
+
+como funciona um banco de dados
+
+Servidor -> Banco -> tabelas
+
+BANCO DE DADOS ----------------------------------------------
+
+//criando banco
+CREATE DATABASE Nome //sem espaços e sem caracteres especiais (Latin1 e UFT-8)
+//alterando banco
+ALTER DATABASE Nome Propriedade
+//excluindo banco (não tem volta)
+DROP DATABASE Nome
+
+TABELAS -----------------------------------------------------
+
+CREATE TABLE Nome (Campos)
+	sintaxe de descrição de campos
+		Nome TipoDeDado Atributos
+
+ALTER TABLE Nome Propriedade
+
+DROP TABLE Nome 
+
+---------------------ÍNDICES
+
+	CREATE INDEX Nome ON TabelaEColuna
+	
+	ALTER INDEX Nome Propriedade
+
+	DROP INDEX Nome //não exclui os dados da tabela, apenas o index
+
+---------------------SEQUÊNCIAS
+
+	CREATE SEQUENCE Nome 
+	
+	ALTER  SEQUENCE Nome Propriedade
+
+	DROP  SEQUENCE Nome //IRREVERSÍVEL
+
+---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
