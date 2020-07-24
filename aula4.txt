@@ -1,0 +1,96 @@
+DML E MQL
+
+------------------------------------
+
+Linguagem de Manipulação de Dados
+
+*INSERT
+*UPDATE 
+*DELETE
+
+Linguagem de Consulta de Dados
+*SELECT
+
+Sintaxe ----------------------------
+
+INSERT INTO Tabela VALUES (Valores)
+
+SELECT Campos FROM Tabela
+
+UPDATE Tabela SET Campo = Valor
+
+DELETE FROM Tabela 
+
+Filtros de Seleção -----------------
+
+WHERE - seleciona o registro
+
+	operadores relacionais
+		=	Igual
+		!=	Diferent
+		> Maior >= Maior igual
+		< Menor <= Menor igual
+		IS NULL nulo
+		IS NOT NULL não nulo
+		BETWEEN	intervalo de valores
+		LIKE 	valor parcial
+
+	operadores lógicos
+		AND
+		OR
+		NOT
+
+Consultando dados com filtros --------
+
+SELECT Campos FROM Tabela WHERE condição
+
+UPDATE Tabela SET Campos = Valor WHERE condição
+
+DELETE FROM Tabela WHERE Condição
+
+
+	atributos especiais.
+
+*Apelido de Tabela
+	SELECT Campos FROM Tabela Apelido
+
+*Apelido de Campos (AS)
+	SELECT Campo AS Apelido FROM...
+
+*Unindo seleções UNION (ALL)
+	SELECT ... UNION SELECT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
