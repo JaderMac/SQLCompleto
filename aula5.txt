@@ -1,0 +1,92 @@
+Relacionamentos no SQL
+	Informações relacionadas entre si
+	em geral entre diferentes tabelas
+	geralmente possuem campos em comum
+	JOIN
+		SELECT FROM T1 JOIN T2 ON T1.FK = T2.PK
+		SELECT FROM T1 JOIN T2 USING Chave
+	Em muitos bancos de dados!
+
+INNER JOIN
+	join padrao
+	produto cartesiano entre tabelas
+	
+	SELECT*FROM PESSOAS JOIN VEICULOS ON PESSOAS.CPF = VEICULOS.CPF
+
+EQUI JOIN
+	similar ao inner join
+	chaves tem que ter o mesmo nome nas duas tabelas
+uma maneira mais facil de fazer o inner join
+	
+	SELECT*FROM PESSOAS JOIN VEICULOS USING (CPF)
+
+NON EQUI JOIN
+	relacionamento sem campo em comum
+
+	SELECT P.NOME,P.SALARIO,S.FAIXA FROM PESSOAS  P INNER JOIN SALARIOS S ON P.SALARIO BETWEEN S.INICIO AND S.FIM
+
+OUTER JOIN, LEFT JOIN, LEFT OUTER JOIN
+	linhas que não satisfaçam a condição de união
+	LEFT -> Linhas da primeira tabela cujo campo de condição não satisfaçam a união de tabelas.
+	
+	SELECT*FROM PESSOAS LEFT JOIN VEICULOS ON PESSOAS.CPF = VEICULOS.CPF
+
+RIGHT JOIN RIGHT OUTER JOIN
+	linhas que não satisfaçam a condição de união
+	RIGHT -> Linhas da SEGUNDA tabela cujo campo de condição não satisfaçam a união de tabelas.
+
+	SELECT*FROM PESSOAS RIGHT JOIN VEICULOS ON PESSOAS.CPF = VEICULOS.CPF
+
+FULL OUTER JOIN
+	combinação de left and right joins
+	
+	SELECT*FROM PESSOAS FULL JOIN VEICULOS ON PESSOAS.CPF = VEICULOS.CPF
+
+SELF JOIN
+	união da tabela com ela mesma
+
+	SELECT*A.NOME, B.NOME, AS INDICADO_POR FROM PESSOAS B ON A.INDICADO = B.CPF
+
+--------------------------------------------------------------------------------------------------------
+
+visões!
+	Tabelas ou relaçoes virtuais
+	Não armazenam dados, não fazem parte do modelo lógico
+	acessivel ao usuário
+	
+CREATE VIEW Nome AS expressãosql(select)
+
+ALTER VIEW Nome Propriedade
+
+DROP VIEW Nome
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
