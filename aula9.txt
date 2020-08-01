@@ -1,0 +1,55 @@
+Stored Procedures
+	Blocos de código sql armazenados no BD
+Vantagens
+	Centralização
+	Segurança
+	Performance/Velocidade
+	Suporte a transações
+
+Limpeza de registros vencidos
+	Storedprocedures pode verificar a data do registro
+e limpar de acordo com um intervalo de tempo setado.
+
+Sintaxe
+
+Criando
+	CREATE STORE PROCEDURE Nome
+Utilizando
+	CALL Nome
+	EXECUTE Nome
+Excluindo
+	DROP PROCEDURE Nome
+
+-----------------------------------------------------------------
+TRIGGERS
+	Eventos que disparam códigos em SQL.
+Vantagens
+	Centralização
+	Segurança
+	Performance/Velocidade
+	Suporte a transações
+	+
+	Execução de código SQL baseado em evento.
+Tipos
+	BEFORE INSERT
+	BEFORE UPDATE
+	BEFORE DELETE
+
+Sintaxe
+	CREATE TRIGGER Nome Tipo ON Tabela
+	DROP TRIGGER Nome
+-------------------------------------------------------------------------------------------------------
+Considerações finais
+
+	TODA CONQUISTA DEVE SER COMEMORADA!
+
+	"O futuro pertence aqueles que acreditam na beleza de seus sonhos"
+		Eleanor Roosevelt
+
+Proximos Passos!
+
+	Devs Web	-> Java Web, Php
+	Devs Desk	-> Java, C#
+	Devs Mobile 	-> Java Androide, Suite
+	Adm DB		-> Oracle, PostGree e outros e ir para tópicos avançados!
+
