@@ -1,0 +1,20 @@
+TRANSAÇÕES ACID
+
+conjunto de operações ACID
+	Atomicidade
+	Consistência
+	Isolamento
+	Durabilidade
+
+Exemplo.
+Transferência Bancária de A para B
+	verifica se há saldo em A
+	retira quantia da conta A
+	deposita quantia na conta B
+------------------------------------------------------------------
+
+DATA TRANSITION LANGUAGE 
+
+START TRANSATION inicia a transação
+COMMIT concretiza a transação
+ROLLBACK desfaz os passos e cancela a transação.
