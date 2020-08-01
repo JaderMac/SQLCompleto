@@ -1,0 +1,45 @@
+DCL - Controle de acesso
+Garantir que somente pessoas autorizadas possam realizar ações com os dados
+
+niveis de acesso
+	BANCOS
+	TABELAS 
+	COLUNAS
+	REGISTROS
+
+niveis de ações
+	GERENCIAR ESTRUTURAS
+	GERENCIAR DADOS
+	LER DADOs
+
+Como Funciona?
+
+Usuário -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> Dado
+
+1- possui acesso ao servidor?
+2- possui acesso ao Banco de dados?
+3- possui acesso ao Tabela?
+4- possui acesso a Coluna
+5- possui acesso ao Registro?
+6- Possui acesso a operação?
+
+TODAS AS RESPOSTAS DEVEM SER SIM!
+
+-----------------------------------------------------------------------------------------
+
+DATA CONTROL LANGUAGE - SQL
+
+CREATE USER Nome - cria usuario
+DROP USER Nome - deleta usuário
+GRANT - habilita acesso
+REVOKE - remove acesso
+
+sintaxe GRANT  
+	GRANT Ação ON Estrutura TO Usuário
+
+sintaxe REVOKE 
+	REVOKE Ação ON Estrutura FROM Usuário
+AÇÕES
+	all, select, insert, update, delete.
+ESTRUTURAS
+	Tables, View, sequences.
