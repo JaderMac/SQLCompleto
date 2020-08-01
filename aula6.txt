@@ -1,0 +1,75 @@
+Funções de Agregação!
+
+COUNT 	:	Contagem de registros.
+SUM	:	Soma de valores.
+AVG	:	Média de valores.
+MAX	:	valor máximo de uma coluna.
+MIN	:	valor minimo de uma coluna.
+
+Sintaxe Count
+	select COUNT (*) from Tabela
+Sintaxe Sum
+	select SUM(coluna) from Tabela
+Sintaxe Avg
+	select AVG(coluna) from Tabela
+sintaxe MAX
+	select MAX(coluna) from Tabela
+sintaxe MIN
+	select MIN(coluna) from Tabela
+
+INTEGRANDO O WHERE
+	SELECT comando FROM tabela WHERE condição.
+		ex. SELECT SUM(SALARIO) FROM FUNCIONARIOS WHERE DEPARTAMENTO = Juridico.
+
+------------------------------------------------------------------------------------------
+
+Funções de paginação
+
+DISTINCT	:	seleciona valores que não repetem.
+ORDER BY	:	ordena o resultado baseado nas colunas informadas.
+LIMIT		:	limita o número de resultados retornados.
+OFFSET		:	indica quantos registros devem ser avançados(PULADOS).	
+
+		*combinações são permitidas!
+
+sintaxe DISTINCT
+	select DISTINCT(coluna) from tabela
+sintaxe ORDER BY (pode ser crescente ASC ou decrescente DESC)
+	select * from tabela ORDER BY salario
+sintaxe LIMIT
+	select * from tabela LIMIT 2
+sintaxe OFFSET
+	select * from tabela OFFSET 2
+
+------------------------------------------------------------------------------------------
+
+funções de agrupamento
+
+GROUP BY	:	Agrupamento de registros por categoria.
+HAVING		:	Seleção de Agrupamento.
+
+sintaxe GROUP BY
+	select DEPARTAMENTO, AVG(SALARIO) FROM funcionarios GROUP BY DEPARTAMENTO
+
+sintaxe HAVING -> filtro de seleção para agrupamento.
+	select DEPARTAMENTO, AVG(SALARIO) FROM funcionarios GROUP BY DEPARTAMENTO
+	HAVING AVG(SALARIO) > 1500
+
+
+------------------------------------------------------------------------------------------
+
+SUBQUERIES (consulta)
+	Consultas com filtro de seleção baseado em uma lista ou outra seleção.
+	IN 
+	NOT IN
+sintaxe -> PRIMEIRA CONSULTA
+	SELECT nome FROM funcionarios WHERE DEPARTAMENTO IN ('Marketing', 'TI')
+		sintaxe SEGUNDA CONSULTA 
+			SELECT nome FROM funcionarios WHERE DEPARTAMENTO IN(
+			SELECT DEPARTAMENTO FROM funcionarios GROUP BY DEPARTAMENTO
+			HAVING AVG(salario)>1500
+			)
+	
+
+
+
